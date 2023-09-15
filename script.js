@@ -1,4 +1,4 @@
-const arr = [3, 1, 2, 4, 5, 8, 7, 6];
+const arr = [3, 1, 2, 4, 5, 7, 6];
 
 const mergeSort = function (arr) {
   if (arr.length === 1) {
@@ -6,7 +6,7 @@ const mergeSort = function (arr) {
   }
 
   const arrL = arr.length;
-  const arrMidx = arrL / 2;
+  const arrMidx = Math.floor(arrL / 2);
 
   const leftside = arr.slice(0, arrMidx);
   const rightside = arr.slice(arrMidx, arrL);
